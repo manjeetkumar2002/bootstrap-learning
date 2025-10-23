@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <style>
+        .container{
+            border:2px solid black;
+        }
+        .row{
+            border:2px solid red;
+        }
+        .pink{
+            background-color: pink;
+        }
+        .green{
+            background-color: green;
+        }
+        .blue{
+            background-color:rgb(71, 102, 229);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- align-items-start -->
+        <div class="row align-items-start">
+            <div class="col-md-3 pink">
+                <h3>col A</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quod pariatur esse error omnis, quo laborum nobis mollitia aspernatur hic?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis exercitationem adipisci magnam accusamus alias, corporis enim dolor doloremque! Nobis, eaque!</p>
+            </div>
+            <div class="col-md-3 green">
+                <h3>col A</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quod pariatur esse error omnis, quo laborum nobis mollitia aspernatur hic?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, deleniti.</p>
+            </div>
+            <div class="col-md-3 blue">
+                <h3>col A</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quod pariatur esse error omnis, quo laborum nobis mollitia aspernatur hic?</p>
+            </div>
+        </div>
+        <!-- align-items-end -->
+        <div class="row align-items-end mt-3">
+            <div class="col-md-3 pink">
+                <h3>col A</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quod pariatur esse error omnis, quo laborum nobis mollitia aspernatur hic?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis exercitationem adipisci magnam accusamus alias, corporis enim dolor doloremque! Nobis, eaque!</p>
+            </div>
+            <div class="col-md-3 green">
+                <h3>col A</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quod pariatur esse error omnis, quo laborum nobis mollitia aspernatur hic?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, deleniti.</p>
+            </div>
+            <div class="col-md-3 blue">
+                <h3>col A</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quod pariatur esse error omnis, quo laborum nobis mollitia aspernatur hic?</p>
+            </div>
+        </div>
+        <!-- align-items-center -->
+        <div class="row align-items-center mt-3">
+            <div class="col-md-3 pink">
+                <h3>col A</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quod pariatur esse error omnis, quo laborum nobis mollitia aspernatur hic?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis exercitationem adipisci magnam accusamus alias, corporis enim dolor doloremque! Nobis, eaque!</p>
+            </div>
+            <div class="col-md-3 green">
+                <h3>col A</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quod pariatur esse error omnis, quo laborum nobis mollitia aspernatur hic?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, deleniti.</p>
+            </div>
+            <div class="col-md-3 blue">
+                <h3>col A</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quod pariatur esse error omnis, quo laborum nobis mollitia aspernatur hic?</p>
+            </div>
+        </div>
+        <!-- align-items-stretch it is by default present-->
+        <div class="row align-items-stretch mt-3">
+            <div class="col-md-3 pink">
+                <h3>col A</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quod pariatur esse error omnis, quo laborum nobis mollitia aspernatur hic?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis exercitationem adipisci magnam accusamus alias, corporis enim dolor doloremque! Nobis, eaque!</p>
+            </div>
+            <div class="col-md-3 green">
+                <h3>col A</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quod pariatur esse error omnis, quo laborum nobis mollitia aspernatur hic?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, deleniti.</p>
+            </div>
+            <div class="col-md-3 blue">
+                <h3>col A</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quod pariatur esse error omnis, quo laborum nobis mollitia aspernatur hic?</p>
+            </div>
+        </div>
+        <!-- align-items-baseline :work when you when difference in font size of each div content-->
+        <div class="row align-items-baseline mt-3">
+            <div class="col-md-3 pink" style="font-size: 22px;">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quod pariatur esse error omnis, quo laborum nobis mollitia aspernatur hic?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis exercitationem adipisci magnam accusamus alias, corporis enim dolor doloremque! Nobis, eaque!</p>
+            </div>
+            <div class="col-md-3 green" style="font-size: 18px;">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quod pariatur esse error omnis, quo laborum nobis mollitia aspernatur hic?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, deleniti.</p>
+            </div>
+            <div class="col-md-3 blue" style="font-size: 16px;">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quod pariatur esse error omnis, quo laborum nobis mollitia aspernatur hic?</p>
+            </div>
+        </div>
+        <!-- we can also add break points  -->
+          <div class="row align-items-lg-center mt-3">
+            <div class="col-md-3 pink">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quod pariatur esse error omnis, quo laborum nobis mollitia aspernatur hic?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis exercitationem adipisci magnam accusamus alias, corporis enim dolor doloremque! Nobis, eaque!</p>
+            </div>
+            <div class="col-md-3 green">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quod pariatur esse error omnis, quo laborum nobis mollitia aspernatur hic?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, deleniti.</p>
+            </div>
+            <div class="col-md-3 blue">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quod pariatur esse error omnis, quo laborum nobis mollitia aspernatur hic?</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
