@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Alignment in bootstrap</title>
+     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <style>
+        .row{
+            border:2px solid black;
+        }
+        .col-md-3{
+            background-color:red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-start">
+            <div class="col-md-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, laboriosam.</div>
+            <div class="col-md-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, velit.</div>
+            <div class="col-md-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, minima.</div>
+        </div>
+        <div class="row justify-content-end">
+            <div class="col-md-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, laboriosam.</div>
+            <div class="col-md-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, velit.</div>
+            <div class="col-md-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, minima.</div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, laboriosam.</div>
+            <div class="col-md-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, velit.</div>
+            <div class="col-md-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, minima.</div>
+        </div>
+        <div class="row justify-content-between">
+            <div class="col-md-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, laboriosam.</div>
+            <div class="col-md-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, velit.</div>
+            <div class="col-md-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, minima.</div>
+        </div>
+        <div class="row justify-content-around">
+            <div class="col-md-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, laboriosam.</div>
+            <div class="col-md-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, velit.</div>
+            <div class="col-md-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, minima.</div>
+        </div>
+        <div class="row justify-content-md-center justify-content-lg-between">
+            <div class="col-md-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, laboriosam.</div>
+            <div class="col-md-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur, velit.</div>
+            <div class="col-md-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, minima.</div>
+        </div>
+    </div>
+</body>
+</html>
