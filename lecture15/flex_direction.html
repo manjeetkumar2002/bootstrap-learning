@@ -3,34 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VERTICAL ALIGNMENT IN BOOTSTRAP</title>
+    <title>flex direction</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <style>
-        .row{
-            border:2px solid black;
-            height: 500px;
-        }
-        .col-md-3{
-            background-color: yellow;
-        }
-        .col-md-4{
-            background-color: greenyellow;
-        }
-        .col-md-5{
-            background-color: orange;
-        }
-        .col-md-6{
-            background-color: cadetblue;
-        }
-        .col-md-2{
-            background-color: tomato;
-        }
-    </style>
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body> 
+    <!-- flex-column -->
     <div class="container">
-        <div class="row">
-           
+        <div class="row flex-column" style="height: 200px; margin-top: 20px;">
+           <div class="col-3 orange">col1</div>
+           <div class="col-3 green">col2</div>
+           <div class="col-3 blue">col3</div>
+           <div class="col-3 red">col4</div>
+        </div>
+    </div>
+    <!-- flex-row by default -->
+    <div class="container">
+        <div class="row flex-row" style="height: 200px; margin-top: 20px;">
+           <div class="col-3 orange">col1</div>
+           <div class="col-3 green">col2</div>
+           <div class="col-3 blue">col3</div>
+           <div class="col-3 red">col4</div>
+        </div>
+    </div>
+    <!-- flex-row-reverse -->
+    <div class="container">
+        <div class="row flex-row-reverse" style="height: 200px; margin-top: 20px;">
+           <div class="col-3 orange">col1</div>
+           <div class="col-3 green">col2</div>
+           <div class="col-3 blue">col3</div>
+           <div class="col-3 red">col4</div>
+        </div>
+    </div>
+    <!-- flex-column-reverse -->
+    <div class="container">
+        <div class="row flex-column-reverse" style="height: 200px; margin-top: 20px;">
+           <div class="col-3 orange">col1</div>
+           <div class="col-3 green">col2</div>
+           <div class="col-3 blue">col3</div>
+           <div class="col-3 red">col4</div>
+        </div>
+    </div>
+    <!-- flex-wrap -->
+    <div class="container">
+        <div class="row flex-row flex-wrap" style="height: 200px; margin-top: 20px;">
+           <div class="col-3 orange">col1</div>
+           <div class="col-3 green">col2</div>
+           <div class="col-3 blue">col3</div>
+           <div class="col-3 red">col4</div>
+           <div class="col-3 yellow">col5</div>
+        </div>
+    </div>
+    <!-- flex-wrap-reverse -->
+    <div class="container">
+        <div class="row flex-row flex-wrap-reverse" style="height: 200px; margin-top: 20px;">
+           <div class="col-3 orange">col1</div>
+           <div class="col-3 green">col2</div>
+           <div class="col-3 blue">col3</div>
+           <div class="col-3 red">col4</div>
+           <div class="col-3 yellow">col5</div>
+        </div>
+    </div>
+    <!-- flex-fill --> 
+     <!-- we can use this class when you used col class only -->
+    <div class="container">
+        <div class="row" style="height: 200px; margin-top: 20px;">
+           <div class="col orange">col1</div>
+           <div class="col green flex-fill">col2</div>
+           <div class="col blue">col3</div>
+           <div class="col red">col4</div>
+        </div>
+    </div>
+
+    <!--  we can used this classes with breakpoints also -->
+      <div class="container">
+        <div class="row flex-md-column" style="height: 200px; margin-top: 20px;">
+           <div class="col-3 orange">col1</div>
+           <div class="col-3 green flex-fill">col2</div>
+           <div class="col-3 blue">col3</div>
+           <div class="col-3 red">col4</div>
         </div>
     </div>
 </body>

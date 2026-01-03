@@ -1,0 +1,19 @@
+.row {
+  border: 2px solid black;
+  height: 500px;
+}
+.col-md-3 , .yellow{
+  background-color: yellow;
+}
+.col-md- , .green {
+  background-color: greenyellow;
+}
+.col-md-5 ,.orange {
+  background-color: orange;
+}
+.col-md-6 ,.blue {
+  background-color: cadetblue;
+}
+.col-md-2, .red {
+  background-color: tomato;
+}
