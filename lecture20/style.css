@@ -11,7 +11,7 @@ a:hover{
     margin-bottom: 40px;
 }
 .section h2.section-head:after{
-    background-color: #e74c3c;
+    background-color: #5A7ACD;
     content: "";
     display: block;
     width: 100px;
@@ -20,7 +20,8 @@ a:hover{
 }
 #header{
     color:#fff;
-    background-color: #e74c3c;
+    background-color: #5A7ACD;
+    padding: 10px 0px;
 }
 
 #logo{
@@ -31,6 +32,7 @@ a:hover{
     list-style-type: none;
     margin:0;
     padding:0;
+    font-size: 1.3rem;
 }
 
 #menu li{
@@ -45,12 +47,13 @@ a:hover{
 }
 
 #menu a:hover{
-    background-color: #c0392b;
+    background-color: #5A7ACD;
 }
 
 #banner{
     background: url(./images/banner.jpg) no-repeat 0 0;
-    background-size: cover;
+    background-size:100% 90%;
+     /* background-color: #5A7ACD; */
 }
 .banner-title{
     padding: 5rem;
@@ -63,7 +66,7 @@ a:hover{
 }
 .banner-title p.lead{
     color:#fff;
-    background-color:rgba(255, 76,60,0.7);
+    background-color:#5A7ACD;
     padding:10px;
 }
 
@@ -71,7 +74,17 @@ a:hover{
     text-align: center;
 }
 .service-box i.fa{
-    color: #e74c3c;
+    color: #5A7ACD;
     font-size: 70px;
     margin-bottom: 15px;
 }
+
+#testimonials{
+    color:white;
+    /* background: url(./images/testimonial-image.jpg) no-repeat 0 0;
+    background-size: cover; */
+    padding:50px 0;
+     background-color: #5A7ACD;
+    position: relative;
+}
+

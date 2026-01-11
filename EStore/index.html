@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estore</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body style="background-color: #ffffff;">
+    <!-- header -->
+    <div id="header-section">
+        <div class="container-fluid overflow-hidden">
+                <!-- top header -->
+                <div class="row py-4 align-items-center mx-lg-5 ">
+                    <!-- top header -->
+                        <div class="col-4">
+                            <h2 class="fs-2 text-dark fw-semibold">eStore</h2>
+                        </div>
+                        <div class="col-4  d-lg-block d-none">
+                            <div class=" search-container rounded-5  p-1 position-relative overflow-hidden" style="box-shadow: 2px 2px 10px rgba(0,0,0,0.1);">
+                                <input id="search-bar" class="border-0 bg-transparent fs-6 shadow-none form-control" type="text" placeholder="Search for products">
+                                <!-- magnify icon -->
+                                <div style="background-color: #0a4db8;" class="text-white d-flex justify-content-center align-items-center fs-5 m-1 px-4 py-0 rounded-5 position-absolute top-0 bottom-0 end-0">
+                                    <i class="bi bi-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-8 fs-4">
+                            <div class="icons float-end d-flex gap-3">
+                                <i class="bi bi-search d-block d-lg-none"></i>
+                                <i class="bi bi-person"></i>
+                                <div class="position-relative d-none d-sm-block ">
+                                    <i class="bi bi-heart"></i>
+                                    <span class="position-absolute h-50 d-flex justify-content-center align-items-center  p-1 rounded-circle text-white" style="font-size:13px ; background-color: #0a4db8; top:-10px;right:-14px;" >0</span>
+                                </div>
+                                <div class="position-relative">
+                                    <i class="bi bi-cart"></i>
+                                    <span class="position-absolute h-50 d-flex justify-content-center align-items-center  p-1 rounded-circle text-white" style="font-size:13px ; background-color: #0a4db8; top:-10px;right:-14px;" >3</span>
+                                </div> 
+                                <i class="bi bi-list d-block d-lg-none"></i>
+                            </div>
+                        </div>
+                </div>
+                <!-- bottom header -->
+                <div class="row border border-start-0 border-end-0 py-3 d-lg-block d-none">
+                    <ul id="nav-menu" class="list-unstyled d-flex fs-6 gap-3 mb-0 mx-5 px-4 flex-wrap">
+                        <a class="text-decoration-none text-dark">Home</a>
+                        <a class="text-decoration-none text-dark">About</a>
+                        <a class="text-decoration-none text-dark">Category</a>
+                        <a class="text-decoration-none text-dark">Product Details</a>
+                        <a class="text-decoration-none text-dark">Cart</a>
+                        <a class="text-decoration-none text-dark">Checkout</a>
+                        <div class="dropdown">
+                            <a class="dropdown-toggle text-decoration-none text-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                        <a class="text-decoration-none text-dark">Contact</a>
+                    </ul>
+                </div>
+        </div>
+    </div>
+    <!-- hero -->
+    <div id="hero-section">
+        <div class="container-lg">
+            <div class="row my-5">
+                <div class="col-md-6 text-md-start text-center">
+                    <div class="px-3 py-2 fs-6 fw-semibold rounded-5 d-inline-block" style="color: #0a4db8; background-color:  #ebf2fa;">New Collection 2025</div>
+                    <h1 id="hero-heading">
+                        Discover Stylish <span>Fashion</span> For Every Season
+                    </h1>
+                    <p class="fs-6 my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Vestibulum ante ipsum primis in faucibus.</p>
+                    <div class="fw-semibold d-flex flex-sm-row flex-column gap-3 justify-content-md-start justify-content-center">
+                        <button class="btn py-2  text-white" style="background-color: #0a4db8;">Shop Now <i class="bi bi-arrow-right-short"></i></button>
+                        <button class="btn  py-2 btn-outline-secondary">View Collection</button>
+                    </div>
+                    <div class="d-flex flex-sm-row flex-column mt-5 gap-3 fs-6">
+                        <div>
+                            <i class="bi bi-truck" style="color: #0a4db8;"></i>
+                            <span class="fw-semibold">Free Shopping</span>
+                        </div>
+                        <div>
+                            <i class="bi bi-shield-check" style="color: #0a4db8;"></i>
+                            <span class="fw-semibold">Secure Payment</span>
+                        </div>
+                        <div>
+                            <i class="bi bi-arrow-repeat" style="color: #0a4db8;"></i>
+                            <span class="fw-semibold">Easy Returns</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 position-relative ">
+                    <img height="600px" class="img-fluid mt-md-0 mt-5" src="./images/hero-image.webp" alt="">
+                    <div class="d-inline-flex rounded-4 align-items-center gap-3 px-2 py-1 py-sm-2 px-sm-2" style="position: absolute; top:20%; left:0px; background-color: white; box-shadow: 2px 2px 10px rgba(0,0,0,0.1);">
+                        <img height="50px" src="./images/hero-floating-img1.webp" alt="">
+                        <div>
+                            <h6>Summer Collection</h6>
+                            <p style="color: #0a4db8; font-weight: 700;">$89.99</p>
+                        </div>
+                    </div> 
+                    <div class="d-inline-flex rounded-4 align-items-center gap-3 px-2 py-1 py-sm-2 px-sm-2 " style="position: absolute; bottom:20%; right:7%; background-color: white; box-shadow: 2px 2px 10px rgba(0,0,0,0.1);">
+                        <img height="50px" src="./images/hero-floating-img2.webp" alt="">
+                        <div>
+                            <h6>Casual Wear</h6>
+                            <p style="color: #0a4db8; font-weight: 700;">$59.99</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- features -->
+    <div id="featured-products-section" style="background-color: #f5f8fc;">
+        <div class="container-md">
+            <div class="row fs-1 row-cols-sm-2 row-cols-lg-4  py-5 text-center">
+                <div class="text-dark ">
+                    <i class="bi bi-truck"></i>
+                    <h4 class="fs-6 mt-3">Free Shipping</h4>
+                    <p class="fs-6 mt-2 mx-sm-0 mx-5 mb-sm-2 mb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, illum.</p>
+                </div>
+                <div class="text-dark ">
+                    <i class="bi bi-piggy-bank"></i>
+                    <h4 class="fs-6 mt-3">Money Back Gurantee</h4>
+                    <p class="fs-6 mt-2 mx-sm-0 mx-5 mb-sm-2 mb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, illum.</p>
+                </div>
+                <div class="text-dark ">
+                    <i class="bi bi-percent"></i>
+                    <h4 class="fs-6 mt-3">Discount Offers</h4>
+                    <p class="fs-6 mt-2 mx-sm-0 mx-5 mb-sm-2 mb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, illum.</p>
+                </div>
+                <div class="text-dark ">
+                    <i class="bi bi-headset"></i>
+                    <h4 class="fs-6 mt-3">24/7 Support</h4>
+                    <p class="fs-6 mt-2 mx-sm-0 mx-5 mb-sm-2 mb-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, illum.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- products -->
+    <div id="products-section">
+        <div class="container-lg">
+            <div class="row position-relative py-5 gap-4 overflow-hidden flex-nowrap">
+                <div class="col text-center rounded-4" style="background-color: var(--bs-secondary-bg);">
+                    <img height="160px" src="./images/product-5.webp" alt="">
+                    <h5 style="color:#0a4db8;" class="fs-6 mt-1">Aenean tellus</h5>
+                    <p class="text-secondary fs-6" >8 Products</p>
+                </div>
+                <div class="col text-center rounded-4" style="background-color: var(--bs-secondary-bg);">
+                    <img height="160px" src="./images/product2.png" alt="">
+                    <h5 style="color:#0a4db8;" class="fs-6 mt-1">Aenean tellus</h5>
+                    <p class="text-secondary fs-6" >8 Products</p>
+                </div>
+                <div class="col text-center rounded-4" style="background-color: var(--bs-secondary-bg);">
+                    <img height="160px" src="./images/product3.webp" alt="">
+                    <h5 style="color:#0a4db8;" class="fs-6 mt-1">Aenean tellus</h5>
+                    <p class="text-secondary fs-6" >8 Products</p>
+                </div>
+                <div class="col text-center rounded-4" style="background-color: var(--bs-secondary-bg);">
+                    <img height="160px" src="./images/product-1.webp" alt="">
+                    <h5 style="color:#0a4db8;" class="fs-6 mt-1">Aenean tellus</h5>
+                    <p class="text-secondary fs-6" >8 Products</p>
+                </div>
+                <div class="col text-center rounded-4" style="background-color: var(--bs-secondary-bg);">
+                    <img height="160px" src="./images/product-8.webp" alt="">
+                    <h5 style="color:#0a4db8;" class="fs-6 mt-1">Aenean tellus</h5>
+                    <p class="text-secondary fs-6" >8 Products</p>
+                </div>
+                <div class="position-absolute px-0 w-100"  style="z-index: 100; top:40%">
+                    <i class="bi bi-chevron-left border-0 fs-3 fw-semibold rounded-circle px-2  py-1 shadow-sm  bg-white " style="color:#0a4db8;"></i>
+                    <i class="bi bi-chevron-right border-0 fs-3  fw-semibold rounded-circle px-2  py-1 shadow-sm  bg-white float-end" style="color:#0a4db8;"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Best sellers  -->
+    <div id="best-sellers-section">
+        <div class="container-lg">
+            <div class="row my-5">
+                <div class="col-12 text-center">
+                    <h2>Best Sellers</h2>
+                    <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+                </div>
+                <div class="col-12">
+                    <div class="row mt-5 row-cols-lg-4 row-cols-sm-2 row-cols-1">
+                        <div class="col">
+                            <div class="w-100 card position-relative bg-light border-0 " style="width: 18rem;">
+                                <img class="img-fluid card-img-top" src="./images/product-1.webp" alt="">
+                                <div class="icons position-absolute d-flex flex-column gap-3" style="top:8px; right:8px;">
+                                    <i class="bi bi-heart px-2 py-1 rounded-circle bg-white shadow" ></i>
+                                    <i class="bi bi-eye px-2  py-1 rounded-circle bg-white shadow"></i>
+                                </div>
+                                <div class="card-body p-3 bg-white">
+                                    <h4 class="card-title fs-6">Lorem ipsum dolor sit amet.</h4>
+                                    <p class="card-text mt-3 mb-0 fw-bold fs-5">$59.9</p>
+                                    <p class="text-warning">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </p>
+                                    <button class="btn text-white w-100" style="background-color: #0a4db8;"><i class="bi bi-bag-plus"></i>  Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col">
+                            <div class="w-100 card position-relative bg-light border-0 " style="width: 18rem;">
+                                <img class="img-fluid card-img-top" src="./images/product-4.webp" alt="">
+                                <div class="icons position-absolute d-flex flex-column gap-3" style="top:8px; right:8px;">
+                                    <i class="bi bi-heart px-2 py-1 rounded-circle bg-white shadow" ></i>
+                                    <i class="bi bi-eye px-2  py-1 rounded-circle bg-white shadow"></i>
+                                </div>
+                                <div class="card-body p-3 bg-white">
+                                    <h4 class="card-title fs-6">Lorem ipsum dolor sit amet.</h4>
+                                    <p class="card-text mt-3 mb-0 fw-bold fs-5">$549.9</p>
+                                     <p class="text-warning">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </p>
+                                    <button class="btn text-white w-100" style="background-color: #0a4db8;"><i class="bi bi-bag-plus"></i>  Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="w-100 card position-relative bg-light border-0 " style="width: 18rem;">
+                                <img class="img-fluid card-img-top" src="./images/product-7.webp" alt="">
+                                <div class="icons position-absolute d-flex flex-column gap-3" style="top:8px; right:8px;">
+                                    <i class="bi bi-heart px-2 py-1 rounded-circle bg-white shadow" ></i>
+                                    <i class="bi bi-eye px-2  py-1 rounded-circle bg-white shadow"></i>
+                                </div>
+                                <div class="card-body p-3 bg-white">
+                                    <h4 class="card-title fs-6">Lorem ipsum dolor sit amet.</h4>
+                                    <p class="card-text mt-3 mb-0 fw-bold fs-5">$439.9</p>
+                                     <p class="text-warning">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                    </p>
+                                    <button class="btn text-white w-100" style="background-color: #0a4db8;"><i class="bi bi-bag-plus"></i>  Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="w-100 card position-relative bg-light border-0 " style="width: 18rem;">
+                                <img class="img-fluid card-img-top" src="./images/product-12.webp" alt="">
+                                <div class="icons position-absolute d-flex flex-column gap-3" style="top:8px; right:8px;">
+                                    <i class="bi bi-heart px-2 py-1 rounded-circle bg-white shadow" ></i>
+                                    <i class="bi bi-eye px-2  py-1 rounded-circle bg-white shadow"></i>
+                                </div>
+                                <div class="card-body p-3 bg-white">
+                                    <h4 class="card-title fs-6">Lorem ipsum dolor sit amet.</h4>
+                                    <p class="card-text mt-3 mb-0 fw-bold fs-5">$129.9</p>
+                                     <p class="text-warning">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </p>
+                                    <button class="btn w-100 bg-light text-secondary"><i class="bi bi-bag-plus"></i>  Sold Out</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- product filter section -->
+    <div id="product-filteration">
+        <div class="container-lg my-5">
+            <div class="row">
+                <div class="filter-buttons col-12 d-flex justify-content-center gap-1 gap-sm-3">
+                    <button style="background-color: #0a4db8;" class="btn text-white rounded-5">All</button>
+                    <button class="btn btn-light rounded-5">Clothing</button>
+                    <button class="btn btn-light rounded-5">Accessories</button>
+                    <button class="btn btn-light rounded-5">Electronics</button>
+                </div>
+            </div>
+            <div class="row my-5 row-cols-1 row-cols-sm-2 row-cols-lg-4">
+                <div class="col">
+                    <div class="w-100 card mt-3" style="width: 18rem;">
+                        <img src="./images/product-11.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build</p>
+                            <h6 class="card-text fw-bold">$75.65</h6>
+                             <p class="text-warning">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-half"></i>
+                                    </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="w-100 card mt-3" style="width: 18rem;">
+                        <img src="./images/product1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build</p>
+                            <h6 class="card-text fw-bold">$35.65</h6>
+                             <p class="text-warning">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="w-100 card mt-3" style="width: 18rem;">
+                        <img src="./images/hero-floating-img2.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build</p>
+                            <h6 class="card-text fw-bold">$65.32</h6>
+                             <p class="text-warning">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="w-100 card mt-3" style="width: 18rem;">
+                        <img src="./images/product-4.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build</p>
+                            <h6 class="card-text fw-bold">$54.65</h6>
+                             <p class="text-warning">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="w-100 card mt-3" style="width: 18rem;">
+                        <img src="./images/product3.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build</p>
+                            <h6 class="card-text fw-bold">$35.65</h6>
+                            <p class="card-text ">ratings</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="w-100 card mt-3" style="width: 18rem;">
+                        <img src="./images/product-7.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build</p>
+                            <h6 class="card-text fw-bold">$35.65</h6>
+                            <p class="card-text ">ratings</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="w-100 card mt-3" style="width: 18rem;">
+                        <img src="./images/product-5.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build</p>
+                            <h6 class="card-text fw-bold">$35.65</h6>
+                            <p class="card-text ">ratings</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="w-100 card mt-3" style="width: 18rem;">
+                        <img src="./images/product-8.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build</p>
+                            <h6 class="card-text fw-bold">$35.65</h6>
+                            <p class="card-text ">ratings</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col justify-content-center d-flex"> 
+                    <button style="background-color: #0a4db8;" class="btn text-white rounded-5">View All Products <i class="bi bi-arrow-right-short"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- newsletter -->
+    <div id="newsletter-section" style="background-color: #f5f8fc;">
+        <div class="container-lg py-5">
+            <div class="row my-5">
+                <div class="col col-sm-7 d-flex flex-column align-items-center mx-auto">
+                <h2>Join Our newsletter</h2>
+                <p class="text-center">Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.</p>
+                <div class=" search-container rounded-5  p-1 position-relative overflow-hidden bg-white w-100" style="box-shadow: 2px 2px 10px rgba(0,0,0,0.1);">
+                    <input id="search-bar" class="border-0 bg-transparent fs-6 shadow-none form-control " type="text" placeholder="Your email address">
+                    <!-- magnify icon -->
+                    <div style="background-color: #0a4db8;" class="text-white d-flex justify-content-center align-items-center fs-6 m-1 px-3 py-0 rounded-5 position-absolute top-0 bottom-0 end-0">
+                        Subscribe
+                    </div>        
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div id="footer">
+        <div class="container-lg">
+            <div class="row row-cols-lg-5 row-cols-sm-2 row-cols-1 py-5">
+                <div class="col fs-6 text-secondary">
+                    <h2 class="fs-4 text-body">eStore</h2>
+                    <p class="text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in nibh vehicula, facilisis magna ut, consectetur lorem.</p>
+                    <p><i class="bi bi-geo-alt text-primary mr-1"></i>    123 Fashion Street, New York, NY 10001</p>
+                    <p><i class="bi bi-telephone text-primary mr-1"></i>    +1 (555) 123-4567</p>
+                    <p><i class="bi bi-envelope text-primary mr-1"></i>    hello@example.com</p>
+                </div>
+                <div class="col fs-6 text-secondary">
+                    <h2 class="fs-5 text-body">Shop</h2>
+                    <p>New Arrivals</p>
+                    <p>Bestsellers</p>
+                    <p>Women's Clothing</p>
+                    <p>Men's Clothing</p>
+                    <p>Accessories</p>
+                    <p>Sale</p>
+                </div>
+                <div class="col fs-6 text-secondary">
+                    <h2 class="fs-5 text-body">Supports</h2>
+                    <p>Help Center</p>
+                    <p>Order Status</p>
+                    <p>Shipping</p>
+                    <p>Returns & Exchanges</p>
+                    <p>Size Guide</p>
+                    <p>Contact Us</p>
+                </div>
+                <div class="col fs-6 text-secondary">
+                    <h2 class="fs-5 text-body">Company</h2>
+                    <p>About Us</p>
+                    <p>Carrers</p>
+                    <p>Press</p>
+                    <p>Affiliates</p>
+                    <p>Responsibility</p>
+                    <p>Investors</p>
+                </div>
+                <div class="col fs-6 text-body d-flex gap-2 flex-column">
+                    <h2 class="fs-5 text-body">Download Our App</h2>
+                    <p>Shop on the go with our mobile app</p>
+                    <div class="d-flex gap-1">
+                        <div class="d-flex gap-1 bg-light rounded-3 p-2 align-items-center ">
+                            <i class="bi bi-apple"></i>
+                            <p class="fw-semibold mb-0">App Store</p>
+                        </div>
+                        <div  class="d-flex gap-2 bg-light rounded-3 p-2 align-items-center ">
+                            <i class="bi bi-google-play"></i>
+                            <p class="fw-semibold mb-0">Google Play</p>
+                        </div>
+                    </div>
+                    <h6 class="text-secondary mt-2">Follow Us</h6>
+                    <div class="d-flex gap-2">
+                        <i class="bi bi-facebook bg-light p-2 fs-6 rounded-circle"></i>
+                        <i class="bi bi-instagram bg-light p-2 fs-6 rounded-circle"></i>
+                        <i class="bi bi-twitter-x bg-light p-2 fs-6 rounded-circle"></i>
+                        <i class="bi bi-tiktok bg-light p-2 fs-6 rounded-circle"></i>
+                        <i class="bi bi-pinterest bg-light p-2 fs-6 rounded-circle"></i>
+                        <i class="bi bi-youtube bg-light p-2 fs-6 rounded-circle"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
